@@ -61,6 +61,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gold: {
+					DEFAULT: '#C9A84C',
+					light: '#E8C96A',
+					dark: '#9A7430',
+				},
+				obsidian: {
+					DEFAULT: '#0A0806',
+					'2': '#110E09',
+					'3': '#1A160F',
 				}
 			},
 			borderRadius: {
@@ -70,20 +80,12 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				}
 			},
 			animation: {
@@ -94,18 +96,6 @@ export default {
 				'display': ['Cormorant Garamond', 'serif'],
 				'sans': ['Montserrat', 'sans-serif'],
 			},
-			colors: {
-				gold: {
-					DEFAULT: '#C9A84C',
-					light: '#E8C96A',
-					dark: '#9A7430',
-				},
-				obsidian: {
-					DEFAULT: '#0A0806',
-					2: '#110E09',
-					3: '#1A160F',
-				}
-			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
